@@ -7,10 +7,14 @@ public class Aula25 {
         
         Scanner novoScanner = new Scanner(System.in);
         
-        char x;
-        System.out.println("Digite um caractere: ");
-        x = novoScanner.next().charAt(0);
-        System.out.println("O caractere digitado: " + x);
-        novoScanner.close();
+        String s1, s2, s3;
+
+        s1 = novoScanner.nextLine();
+        s2 = novoScanner.nextLine();
+        s3 = novoScanner.nextLine();
+        
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
     }
 }
