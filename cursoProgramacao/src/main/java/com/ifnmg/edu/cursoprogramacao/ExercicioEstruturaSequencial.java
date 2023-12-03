@@ -67,6 +67,26 @@ public class ExercicioEstruturaSequencial {
     System.out.println("Número = " + numFuncionario);
     System.out.printf("Salário = R$ %.2f", salario);
     */
-    /* Exercício 5 - Fazer um programa para ler o código de uma peça 1, o número de peças 1, o valor unitário de cada peça 1, o código e uma peça 2, o número de peças 2, o valor unitário de cada peça 2. Cálcule e mostre o valor a ser pago. */
+    /* Exercício 5 - Fazer um programa para ler o código de uma peça 1, o número de peças 1, o valor unitário de cada peça 1, o código de uma peça 2, o número de peças 2, o valor unitário de cada peça 2. Cálcule e mostre o valor a ser pago. */
+    
+        Scanner newScanner = new Scanner(System.in);
+    
+        int codP1, numP1, codP2, numP2;
+        double precoP1, precoP2, precoTotal;
+    
+        System.out.println("Insira o código, quantidade e preço da peça 1: ");
+        codP1 = newScanner.nextInt();
+        numP1 = newScanner.nextInt();
+        precoP1 = newScanner.nextDouble();
+        
+        System.out.println("Insira o código, quantidade e preço da peça 2: ");
+        codP2 = newScanner.nextInt();
+        numP2 = newScanner.nextInt();
+        precoP2 = newScanner.nextDouble();
+        
+        precoTotal = numP1 * precoP1 + numP2 * precoP2;
+        
+        System.out.printf("VALOR A PAGAR: R$ %.2f", precoTotal);
+    
     }
 }
