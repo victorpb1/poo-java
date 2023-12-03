@@ -47,7 +47,7 @@ public class ExercicioEstruturaSequencial {
         
         System.out.println("A diferenca de produtos: " + diferenca);
         */
-    /* Exercício 4 - Fazer um programa que leia o número de um funcionário, seu número de horas trabalhadas, o valor que recebe por hora e calcule o salário desse funcionário. A seguir mostre o número e o salário do funcionário com duas casas decimais. */
+    /* Exercício 4 - Fazer um programa que leia o número de um funcionário, seu número de horas trabalhadas, o valor que recebe por hora e calcule o salário desse funcionário. A seguir mostre o número e o salário do funcionário com duas casas decimais.
     
     Scanner newScanner = new Scanner(System.in);
     
@@ -65,7 +65,8 @@ public class ExercicioEstruturaSequencial {
     salario = horas * valorHora;
     
     System.out.println("Número = " + numFuncionario);
-    System.out.printf("Salário = %.2f", salario);
-    
+    System.out.printf("Salário = R$ %.2f", salario);
+    */
+    /* Exercício 5 - Fazer um programa para ler o código de uma peça 1, o número de peças 1, o valor unitário de cada peça 1, o código e uma peça 2, o número de peças 2, o valor unitário de cada peça 2. Cálcule e mostre o valor a ser pago. */
     }
 }
