@@ -67,7 +67,7 @@ public class ExercicioEstruturaSequencial {
     System.out.println("Número = " + numFuncionario);
     System.out.printf("Salário = R$ %.2f", salario);
     */
-    /* Exercício 5 - Fazer um programa para ler o código de uma peça 1, o número de peças 1, o valor unitário de cada peça 1, o código de uma peça 2, o número de peças 2, o valor unitário de cada peça 2. Cálcule e mostre o valor a ser pago. */
+    /* Exercício 5 - Fazer um programa para ler o código de uma peça 1, o número de peças 1, o valor unitário de cada peça 1, o código de uma peça 2, o número de peças 2, o valor unitário de cada peça 2. Cálcule e mostre o valor a ser pago.
     
         Scanner newScanner = new Scanner(System.in);
     
@@ -86,7 +86,34 @@ public class ExercicioEstruturaSequencial {
         
         precoTotal = numP1 * precoP1 + numP2 * precoP2;
         
-        System.out.printf("VALOR A PAGAR: R$ %.2f", precoTotal);
+        System.out.printf("VALOR A PAGAR: R$ %.2f", precoTotal); */
+    /* Exercício 6 - Fazer um programa que leia três valores com ponto flutuante de dupla precisão: A, B e C. Em seguida, calcule e mostre: 
+    a) a área do triângulo retângulo que tem A por base e C por altura.
+    b) a área do círculo de racio C. (pi = 3.14159) 
+    c) a área do trapézio que tem A e B por bases e C por altura.
+    d) a área do quadrado que tem lado B.
+    e) a área do retângulo que tem lados A e B
+    */
+        Scanner newScanner = new Scanner(System.in);
     
+        double A, B, C, areaTriangulo, areaCirculo, areaTrapezio, areaQuadrado, areaRetangulo, pi = 3.14159;
+        
+        System.out.println("Insira os valores para A, B e C: ");
+        
+        A = newScanner.nextDouble();
+        B = newScanner.nextDouble();
+        C = newScanner.nextDouble();
+        
+        areaTriangulo = A * C/2;
+        areaCirculo = pi * C * C;
+        areaTrapezio = (A + B) * C/2;
+        areaQuadrado = B * B;
+        areaRetangulo = A * B;
+    
+        System.out.printf("TRIANGULO: %.3f%n", areaTriangulo);
+        System.out.printf("CIRCULO: %.3f%n", areaCirculo);
+        System.out.printf("TRAPEZIO: %.3f%n", areaTrapezio);
+        System.out.printf("QUADRADO: %.3f%n", areaQuadrado);
+        System.out.printf("RETANGULO: %.3f", areaRetangulo);
     }
 }
